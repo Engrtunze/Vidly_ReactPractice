@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/.idea/Vidly_ReactPractice.iml" filepath="$PROJECT_DIR$/.idea/Vidly_ReactPractice.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/.idea/vidly.iml" filepath="$PROJECT_DIR$/.idea/vidly.iml" />
+>>>>>>> 7a3711c0ef300baf961fa6464ea609c07c30387c
     </modules>
   </component>
 </project>
