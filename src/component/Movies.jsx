@@ -6,6 +6,7 @@ import {pagination} from "../utils/pagination";
 import ListGroup from "./common/ListGroup";
 import {getGenres} from "../services/fakeGenreService";
 import _ from 'lodash'
+import Navbar from "./common/Navbar";
 
 export default class Movies extends Component {
   
@@ -80,7 +81,10 @@ export default class Movies extends Component {
 
         return (
 
+
                 <div className="row">
+
+
                     <div className="col-sm-2">
 
                        <ListGroup Listitems={this.state.genres}
