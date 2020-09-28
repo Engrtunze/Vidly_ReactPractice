@@ -7,6 +7,7 @@ import ListGroup from "./common/ListGroup";
 import {getGenres} from "../services/fakeGenreService";
 import _ from 'lodash'
 import Navbar from "./common/Navbar";
+import Link from "react-router-dom/Link";
 
 export default class Movies extends Component {
   
@@ -67,7 +68,7 @@ export default class Movies extends Component {
         const moviesPag = pagination(sorted, currentPage, pageSize);
 
         return {totalCount: filtered.length, data: moviesPag}
-    }
+    };
 
 
     render() {
@@ -94,6 +95,8 @@ export default class Movies extends Component {
 
                     </div>
                     <div className="col-sm-10">
+                        <Link to="/movies/Newmovies" className="btn btn-primary" style={{marginBottom:20}}>New movie</Link>
+
             <p>Showing <b>{totalCount}</b> movies in the database.</p>
 
                         <MoviesTable

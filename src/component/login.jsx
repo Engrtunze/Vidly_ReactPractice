@@ -1,5 +1,4 @@
 import React from 'react';
-import Input from "./common/input";
 import Form from "./common/Form";
 
 import  Joi from  "joi-browser"
@@ -14,7 +13,7 @@ class Login extends Form {
     schema = {
         username : Joi.string().required().label('Username'),
         password : Joi.string().required().label('Password')
-    }
+    };
 
     // validate = () => {
 
@@ -45,7 +44,7 @@ class Login extends Form {
 
     doSubmit = () =>{
         console.log("submitted");
-    }
+    };
 
     // validateProperty = ({name, value}) => {
     //     // if  (name === "username")
@@ -72,33 +71,19 @@ class Login extends Form {
 const data = {...this.state.data};
 data[e.currentTarget.name] =e.currentTarget.value;
 this.setState({data, errors});
-    }
+    };
 
 
     render() {
-        const {data, errors} = this.state;
+
 
         return (
             <div>
                 <h1>Login</h1>
                     <form onSubmit={this.handleSubmit}>
 
-                        <Input
-                        name="username"
-                        value={data.username}
-                        label="username"
-                        onChange={this.handleChange}
-                       error={errors.username}
-                        />
-
-                        <Input
-                            name="password"
-                            value={data.password}
-                            label="password"
-                            onChange={this.handleChange}
-                           error={errors.password}
-                        />
-
+                        {this.renderInput("username", "Username")}
+                        {this.renderInput("password", "Password", "password" )}
 
                         {this.renderButton('Login')}
 

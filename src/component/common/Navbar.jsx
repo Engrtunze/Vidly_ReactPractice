@@ -14,6 +14,7 @@ const Navbar = () => {
                     <NavLink className="nav-link" to="/movies">Movies <span className="sr-only">(current)</span></NavLink>
                     <NavLink className="nav-link" to="/customers">Customers</NavLink>
                     <NavLink className="nav-link" to="/login">Login</NavLink>
+                    <NavLink className="nav-link" to="/Register">Sign up</NavLink>
 
                 </div>
             </div>
