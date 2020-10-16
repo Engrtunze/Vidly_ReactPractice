@@ -10,7 +10,7 @@ import Movieform from "./component/movieform";
 import Login from "./component/login";
 import "./App.css"
 import Register from "./component/Register";
-import NewMovies from "./component/NewMovies";
+
 
 
 class App extends Component {
@@ -22,7 +22,7 @@ class App extends Component {
       <Navbar />
     <main className="container">
         <Switch>
-            <Route path="/movies/Newmovies" component={NewMovies}></Route>
+            {/*<Route path="/movies/Newmovies" component={Movies}></Route>*/}
             <Route path="/Register" component={Register}></Route>
             <Route path="/login" component={Login}></Route>
             <Route path="/movies/:id" component={Movieform}></Route>

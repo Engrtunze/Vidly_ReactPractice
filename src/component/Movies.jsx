@@ -82,7 +82,6 @@ export default class Movies extends Component {
 
         return (
 
-
                 <div className="row">
 
 
@@ -95,7 +94,7 @@ export default class Movies extends Component {
 
                     </div>
                     <div className="col-sm-10">
-                        <Link to="/movies/Newmovies" className="btn btn-primary" style={{marginBottom:20}}>New movie</Link>
+                        <Link to="/movies/new" className="btn btn-primary" style={{marginBottom:20}}>New movie</Link>
 
             <p>Showing <b>{totalCount}</b> movies in the database.</p>
 
